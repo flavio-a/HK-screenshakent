@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <HollowKnightRefs>D:\HK\1315-modded\hollow_knight_Data\Managed\</HollowKnightRefs>
+    <HollowKnightRefs>D:\HK\1432-modded\hollow_knight_Data\Managed\</HollowKnightRefs>
     <ExportDir>D:\HK\HK Mods\Exports\</ExportDir>
   </PropertyGroup>
 
@@ -55,22 +55,33 @@
     <None Remove="Resources\**" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>$(HollowKnightRefs)\Assembly-CSharp.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayMaker, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(HollowKnightRefs)\PlayMaker.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>$(HollowKnightRefs)\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>$(HollowKnightRefs)\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+    <ItemGroup>
+	    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral">
+		    <HintPath>$(HollowKnightRefs)/Assembly-CSharp.dll</HintPath>
+		    <SpecificVersion>False</SpecificVersion>
+	    </Reference>
+	    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.dll</HintPath>
+	    </Reference>
+	    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.CoreModule.dll</HintPath>
+	    </Reference>
+	    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.IMGUIModule.dll</HintPath>
+	    </Reference>
+	    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.InputModule.dll</HintPath>
+	    </Reference>
+	    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.InputLegacyModule.dll</HintPath>
+	    </Reference>
+	    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/UnityEngine.JSONSerializeModule.dll</HintPath>
+	    </Reference>
+	    <Reference Include="PlayMaker, Version=1.6.0.0, Culture=neutral, PublicKeyToken=null">
+		    <HintPath>$(HollowKnightRefs)/PlayMaker.dll</HintPath>
+	    </Reference>
+    </ItemGroup>
 
 
   <ItemGroup>
