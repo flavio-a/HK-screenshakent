@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <HollowKnightRefs>D:\HK\1432-modded\hollow_knight_Data\Managed\</HollowKnightRefs>
+    <HollowKnightRefs>D:\HK\1315-modded\hollow_knight_Data\Managed\</HollowKnightRefs>
     <ExportDir>D:\HK\HK Mods\Exports\</ExportDir>
   </PropertyGroup>
 

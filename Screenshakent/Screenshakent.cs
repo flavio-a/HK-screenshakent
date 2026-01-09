@@ -28,14 +28,18 @@ namespace Screenshakent
 
             Instance = this;
             LoadMultiplier();
-            EditScreenShake();
+            ModHooks.AfterSavegameLoadHook += EditScreenShakeHandler; 
 
             Log("Initialized");
         }
 
+        private void EditScreenShakeHandler(SaveGameData _data)
+        {
+            EditScreenShake();
+        }
+
         public static void EditScreenShake()
         {
-            LoadMultiplier();
             var fsm = GameCameras.instance.cameraShakeFSM;
 
             if (Constants.GAME_VERSION == "1.4.3.2" || Constants.GAME_VERSION == "1.3.1.5")
