@@ -28,12 +28,18 @@ namespace Screenshakent
 
             Instance = this;
             LoadMultiplier();
-            ModHooks.AfterSavegameLoadHook += EditScreenShakeHandler; 
+            ModHooks.NewGameHook += EditScreenShakeHandler;
+            ModHooks.SavegameLoadHook += EditScreenShakeHandler; 
 
             Log("Initialized");
         }
 
-        private void EditScreenShakeHandler(SaveGameData _data)
+        private void EditScreenShakeHandler(int _)
+        {
+            EditScreenShake();
+        }
+
+        private void EditScreenShakeHandler()
         {
             EditScreenShake();
         }
