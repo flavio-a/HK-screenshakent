@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <HollowKnightRefs>D:\HK\1315-modded\hollow_knight_Data\Managed\</HollowKnightRefs>
+    <HollowKnightRefs>D:\HK\1432-modded-backport\hollow_knight_Data\Managed\</HollowKnightRefs>
     <ExportDir>D:\HK\HK Mods\Exports\</ExportDir>
   </PropertyGroup>
 
@@ -13,7 +13,7 @@
     <Product>Screenshakent</Product>
     <Description>A Hollow Knight Mod to remove screen shake</Description>
     <Copyright>Copyright © Ff300 2026</Copyright>
-    <AssemblyVersion>1.0.1</AssemblyVersion>
+    <AssemblyVersion>1.0.2</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <LangVersion>latest</LangVersion>
@@ -60,6 +60,12 @@
 		    <HintPath>$(HollowKnightRefs)/Assembly-CSharp.dll</HintPath>
 		    <SpecificVersion>False</SpecificVersion>
 	    </Reference>
+        <Reference Include="MMHOOK_Assembly-CSharp">
+          <HintPath>$(HollowKnightRefs)/MMHOOK_Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="MMHOOK_PlayMaker">
+          <HintPath>$(HollowKnightRefs)/MMHOOK_PlayMaker.dll</HintPath>
+        </Reference>
 	    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
 		    <HintPath>$(HollowKnightRefs)/UnityEngine.dll</HintPath>
 	    </Reference>
